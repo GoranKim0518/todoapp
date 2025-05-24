@@ -1,3 +1,7 @@
 export default function Header() {
-    return('');
+    return(
+        <div>
+            <h3>To Do List</h3>
+        </div>
+    );
 }
