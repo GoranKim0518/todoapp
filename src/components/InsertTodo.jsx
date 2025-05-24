@@ -16,7 +16,7 @@ export default function InsertTodo() {
 
     return(
         <div>
-            <input type="text" placeholder="할 일을 입력하세요"></input>
+            <input type="text" placeholder="할 일을 입력하세요" value={inputState} onChange={(event) => setInputState(event.target.value)}></input>
             <div onClick={(text) => saveInputText(text)}>
                 <FontAwesomeIcon icon={faPlus} />
             </div>
